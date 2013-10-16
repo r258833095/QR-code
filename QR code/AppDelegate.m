@@ -9,8 +9,12 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "QRCodeGenerator.h"
 
 @implementation AppDelegate
+
+@synthesize window = _window;
+@synthesize viewController = _viewController;
 
 - (void)dealloc
 {
@@ -27,6 +31,7 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
